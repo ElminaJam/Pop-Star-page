@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Justin Timberlake</title>
+    <meta
+      name="description"
+      content="Find a front-end and web developer based in Italy. Check out the Pop Star project coded by Elmina Jamalova."
+    />
+    <title>Pop Star page - Elmina Jamalova</title>
     <script
       src="https://kit.fontawesome.com/3fda5d8325.js"
       crossorigin="anonymous"
@@ -30,13 +34,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top bar black">
       <div class="container-fluid p-0">
-        <a class="nav-link bar-item button" href="#">HOME</a>
+        <a href="#" class="nav-link bar-item button" title="Homepage">HOME</a>
         <button
           class="navbar-toggler collapsed"
           type="button"
@@ -51,13 +55,21 @@
         <div class="navbar-collapse collapse" id="navbarNavAltMarkup" style>
           <div class="navbar-nav">
             <a
+              href="#about"
               class="nav-link bar-item button"
               aria-current="page"
-              href="#about"
+              title="About Justin Timberlake"
               >ABOUT</a
             >
-            <a class="nav-link bar-item button" href="#tour">TOUR</a>
-            <a class="nav-link bar-item button" href="#contact">CONTACT</a>
+            <a href="#tour" class="nav-link bar-item button" title="Tour Dates"
+              >TOUR</a
+            >
+            <a
+              href="#contact"
+              class="nav-link bar-item button"
+              title="Contact us"
+              >CONTACT</a
+            >
           </div>
         </div>
       </div>
@@ -69,6 +81,7 @@
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/072/original/jt.jpg?1684969911"
           style="width: 100%"
+          alt="Justin Timberlake"
         />
         <div class="display-bottommiddle container text-white text-shadow">
           <h3>Suit & Tie</h3>
@@ -79,6 +92,7 @@
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/073/original/jt2.jpg?1684969922"
           style="width: 100%"
+          alt="Justin Timberlake"
         />
         <div class="display-bottommiddle container text-white text-shadow">
           <h3>Higher Higher</h3>
@@ -89,6 +103,7 @@
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/074/original/jt3.jpg?1684969944"
           style="width: 100%"
+          alt="Justin Timberlake"
         />
         <div class="display-bottommiddle container text-white text-shadow">
           <h3>Man of the Woods</h3>
@@ -120,7 +135,7 @@
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/075/original/justified.jpg?1684969957"
               class="round"
-              alt="album"
+              alt="Justified album"
               style="width: 90%"
             />
           </div>
@@ -132,7 +147,7 @@
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/071/original/fsls.jpg?1684969903"
               class="round"
-              alt="album"
+              alt="FutureSex/LoveSounds album"
               style="width: 90%"
             />
           </div>
@@ -144,7 +159,7 @@
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/070/original/experience.jpg?1684969894"
               class="round"
-              alt="album"
+              alt="The 20/20 Experience album"
               style="width: 90%"
             />
           </div>
@@ -156,7 +171,7 @@
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/076/original/MOTW.jpg?1684969983"
               class="round"
-              alt="album"
+              alt="Man of the Woods album"
               style="width: 90%"
             />
           </div>
@@ -185,7 +200,7 @@
             <div class="third">
               <img
                 src="https://www.disguise.one/media/4160/jt-image-5.jpg"
-                alt="Milan"
+                alt="Stage"
                 style="width: 100%"
                 class="hover-opacity"
               />
@@ -204,7 +219,7 @@
             <div class="third">
               <img
                 src="https://www.disguise.one/media/4158/jt-image-3.jpg"
-                alt="Amsterdam"
+                alt="Stage"
                 style="width: 100%"
                 class="hover-opacity"
               />
@@ -223,7 +238,7 @@
             <div class="third">
               <img
                 src="https://www.disguise.one/media/4161/jt-main.jpg"
-                alt="Cologne"
+                alt="Stage"
                 style="width: 100%"
                 class="hover-opacity"
               />
@@ -245,7 +260,7 @@
 
       <!-- Ticket Modal -->
       <div id="ticketModal" class="modal">
-        <div class="modal-content animate-top card-4" style="width: 340px">
+        <div class="modal-content" style="width: 340px">
           <header class="container teal center p-3">
             <span
               onclick="document.getElementById('ticketModal').style.display='none'"
@@ -295,12 +310,12 @@
         <div class="row mt-5">
           <div class="col-md m6 large margin-bottom">
             <i class="fa fa-map-marker" style="width: 30px"></i> New York, US<br />
-            <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 050101<br />
+            <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 110202<br />
             <i class="fa fa-envelope" style="width: 30px"> </i> Email:
-            mail@mail.com<br />
+            mail@gmail.com<br />
           </div>
           <div class="col-md m6">
-            <form action="/action_page.php" target="_blank">
+            <form>
               <div class="row-padding" style="margin: 0 -16px 8px -16px">
                 <div class="half">
                   <input
@@ -355,12 +370,13 @@
       <p>
         Coded by
         <a
-          href="https://www.linkedin.com/in/elmina-jamal-7a87071a1"
+          href="https://www.linkedin.com/in/elmina-jamal"
           target="_blank"
-          >Elmina Jamal</a
+          title="LinkedIn Profile"
+          >Elmina Jamalova</a
         >
       </p>
     </footer>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
